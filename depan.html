@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stop Bullying - Awareness Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        #intro {
+            background-color: #e0f7fa;
+        }
+
+        #video, #location {
+            background-color: #ffeb3b;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Stop Bullying - Awareness Campaign</h1>
+    </header>
+
+    <section id="intro">
+        <h2>What is Bullying?</h2>
+        <p>Bullying is a serious issue that affects millions of people worldwide. It can take many forms, including physical,
+            verbal, and online abuse. Our campaign aims to raise awareness about bullying and provide resources to help those
+            who are affected.</p>
+        <div class="gallery">
+            <!-- Replace these with your actual image paths -->
+            <img src="bullying_image1.jpg" alt="Bullying Scene">
+            <img src="bullying_image2.jpg" alt="Support against Bullying">
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>Watch Our Awareness Video</h2>
+        <div class="video-container">
+            <!-- Replace this with the actual YouTube Video ID -->
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="location">
+        <h2>Find Support Locations Near You</h2>
+        <p>Use the map below to find places where you can get help and support related to bullying.</p>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Stop Bullying Campaign. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function initMap() {
+            const location = { lat: 40.7128, lng: -74.0060 }; // Coordinates for New York City (you can change this)
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: location,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "Support Center",
+            });
+        }
+    </script>
+
+</body>
+
+</html>

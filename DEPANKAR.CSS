@@ -1,0 +1,50 @@
+h1 {
+    font-family: Helvetica;
+    font-size: 80px;
+    color: rgb(116, 96, 7);
+    text-align: center;
+}
+nav a{
+    display: block;
+    padding: 14px 16px;
+    color: rgb(230, 13, 60);
+    float: right;
+    background-color: rgb(65, 126, 105);
+}
+nav a:hover{
+    background-color:rgb(82, 141, 136);
+}
+nav, .footerbar{
+    background-color:rgb(89, 136, 130);
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+}
+nav a, footer a{
+    display: block
+    padding: 14px 16px;
+    color: purple
+    text-decoration: none;
+    float: left;
+}
+p {
+    padding: 25px 50px 70px 90px;
+    background-color: rgb(74, 114, 88);
+}
+h1 {
+    display: square;
+    height: 20%;
+    background-color: rgb(77, 109, 93);
+    color: rgb(255, 153, 0);
+    font-size: 29px;
+    text-align: center;
+}
+nav{
+    background-color: rgb(77, 121, 110);
+    margin: 0;
+    padding: 0px;
+}
+img {
+    width: 20%;
+    height: 20%;
+}
